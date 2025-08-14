@@ -1,7 +1,7 @@
 /// <reference types="vitest/config" />
-import { reactRouter } from "@react-router/dev/vite";
+import { reactRouter } from "@react-router/dev/vite"; //comment this out if you want to use storybook mode
 import tailwindcss from "@tailwindcss/vite";
-// import react from "@vitejs/plugin-react";
+// import react from "@vitejs/plugin-react";  //remove the comment here in case storybook does not build
 import { defineConfig } from "vite";
 import tsconfigPaths from "vite-tsconfig-paths";
 import path from 'node:path';
@@ -11,7 +11,8 @@ const dirname = typeof __dirname !== 'undefined' ? __dirname : path.dirname(file
 
 // More info at: https://storybook.js.org/docs/next/writing-tests/integrations/vitest-addon
 export default defineConfig({
-  plugins: [tailwindcss(),reactRouter() , tsconfigPaths()],
+  plugins: [tailwindcss(),reactRouter() , tsconfigPaths()], //comment this out if you want to use storybook mode
+    // plugins: [react(),tailwindcss(), tsconfigPaths()], //remove the comment here in case storybook does not build
   test: {
     projects: [{
       extends: true,
