@@ -61,9 +61,9 @@ http://localhost:6006
 >  
 > During development, I encountered an issue where **Storybook would fail to build** if the `reactRouter()` plugin was used instead of the basic `react()` plugin.  
 >  
-> Due to time constraints, I implemented a **temporary workaround** rather than a full fix. The solution involves **commenting out certain lines** and adding notes in the **vite.config.ts** code to indicate what should be **added or removed** depending on whether you're running the app in Storybook mode or regular development mode.  
+> Due to time constraints, I implemented a **temporary workaround** rather than a full fix. The solution involves **commenting out certain lines** and adding notes in the `**vite.config.ts**` code to indicate what should be **added or removed** depending on whether you're running the app in Storybook mode or regular development mode.  
 >  
-> This approach allows Storybook to work, but it’s a **band-aid solution** — a more robust fix is still needed.
+> This approach allows Storybook to work, but it’s a **band-aid solution**. a more robust fix is still needed.
 
 ## ⏱ Time Spent & Tradeoffs
 
@@ -73,6 +73,6 @@ I dedicated a little over **3 hours** to this project.
 - Implemented **routing** between pages, along with **simple loading and error handling**.  
 - Encountered a **storybook build issue** (related to the `reactRouter()` plugin), which consumed a significant portion of development time.  
 - Due to this, I was **unable to make most pages/components fully responsive**.  
-- Implemented a **simple landing page** — prioritizing functionality over extraordinary design, focusing on delivering a **working and maintainable application**.  
+- Implemented a **simple landing page**. prioritizing functionality over extraordinary design, focusing on delivering a **working and maintainable application**.  
 
 
