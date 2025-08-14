@@ -74,7 +74,7 @@ I dedicated a little over **3 hours** to this project.
 - Spent a couple of hours **creating and styling components** using **TailwindCSS** and **PrimeReact**.  
 - Implemented **routing** between pages, along with **simple loading and error handling**.  
 - Encountered a **storybook build issue** (related to the `reactRouter()` plugin), which consumed a significant portion of development time.  
-- Due to this, I was **unable to make most pages/components fully responsive**.  
+- Due to this, I was **unable to make some pages/components fully responsive**.  
 - Implemented a **simple landing page**. prioritizing functionality over extraordinary design, focusing on delivering a **working and maintainable application**.  
 
 
