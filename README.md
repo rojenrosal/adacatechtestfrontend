@@ -1,87 +1,78 @@
-# Welcome to React Router!
+# 📇 User Directory Viewer
 
-A modern, production-ready template for building full-stack React applications using React Router.
+A small React application for viewing a list of users and their detailed profiles, built with **React**, **TypeScript**, and **PrimeReact**.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
+---
 
-## Features
+## ✨ Features
 
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
-- 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
-- 📖 [React Router docs](https://reactrouter.com/)
+- A simple home/landing page
+- **User List Page** – Fetches and displays a list of users from a public API using a PrimeReact DataTable.  
+- **User Detail Page** – Shows detailed information for a specific user in a PrimeReact Card.  
+- **Client-Side Routing** – Uses React Router v7 to navigate between the list (`/users`) and detail (`/users/:id`) views.
 
-## Getting Started
+---
 
-### Installation
+## 🚀 Technologies
 
-Install the dependencies:
+- **[React](https://react.dev/)** – JavaScript library for building user interfaces  
+- **[TypeScript](https://www.typescriptlang.org/)** – Adds static type-checking to JavaScript  
+- **[React Router v7](https://reactrouter.com/)** – Declarative navigation for React apps  
+- **[PrimeReact](https://primereact.org/)** – UI component library for React  
+- **[Vite](https://vitejs.dev/)** – Lightning-fast frontend build tool  
+- **[Storybook](https://storybook.js.org/)** – Develop and test UI components in isolation  
 
+---
+
+## 🛠️ Getting Started
+
+### **Prerequisites**
+Make sure you have [Node.js](https://nodejs.org/) and npm installed.
+
+### **Installation**
 ```bash
+git clone https://github.com/your-username/user-directory-viewer.git
+cd user-directory-viewer
 npm install
 ```
 
-### Development
 
-Start the development server with HMR:
+## 🖥 Development
+
+Start the development server with Hot Module Replacement (HMR):
 
 ```bash
 npm run dev
 ```
 
-Your application will be available at `http://localhost:5173`.
+The app will be available at:
+http://localhost:5173
 
-## Building for Production
-
-Create a production build:
-
+## 📚 Storybook
 ```bash
-npm run build
+npm run storybook
 ```
 
-## Deployment
+Storybook will open at:
+http://localhost:6006
 
-### Docker Deployment
+> [!WARNING]  
+> **Storybook & React Router Plugin Issue**  
+>  
+> During development, I encountered an issue where **Storybook would fail to build** if the `reactRouter()` plugin was used instead of the basic `react()` plugin.  
+>  
+> Due to time constraints, I implemented a **temporary workaround** rather than a full fix. The solution involves **commenting out certain lines** and adding notes in the **vite.config.ts** code to indicate what should be **added or removed** depending on whether you're running the app in Storybook mode or regular development mode.  
+>  
+> This approach allows Storybook to work, but it’s a **band-aid solution** — a more robust fix is still needed.
 
-To build and run using Docker:
+## ⏱ Time Spent & Tradeoffs
 
-```bash
-docker build -t my-app .
+I dedicated a little over **3 hours** to this project.  
 
-# Run the container
-docker run -p 3000:3000 my-app
-```
+- Spent a couple of hours **creating and styling components** using **TailwindCSS** and **PrimeReact**.  
+- Implemented **routing** between pages, along with **simple loading and error handling**.  
+- Encountered a **storybook build issue** (related to the `reactRouter()` plugin), which consumed a significant portion of development time.  
+- Due to this, I was **unable to make most pages/components fully responsive**.  
+- Implemented a **simple landing page** — prioritizing functionality over extraordinary design, focusing on delivering a **working and maintainable application**.  
 
-The containerized application can be deployed to any platform that supports Docker, including:
 
-- AWS ECS
-- Google Cloud Run
-- Azure Container Apps
-- Digital Ocean App Platform
-- Fly.io
-- Railway
-
-### DIY Deployment
-
-If you're familiar with deploying Node applications, the built-in app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
-
-```
-├── package.json
-├── package-lock.json (or pnpm-lock.yaml, or bun.lockb)
-├── build/
-│   ├── client/    # Static assets
-│   └── server/    # Server-side code
-```
-
-## Styling
-
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
-
----
-
-Built with ❤️ using React Router.
