@@ -32,7 +32,7 @@ Make sure you have [Node.js](https://nodejs.org/) and npm installed.
 ### **Installation**
 ```bash
 git clone https://github.com/rojenrosal/adacatechtestfrontend.git
-cd userdirectoryviewer 
+cd adacatechtestfrontend
 npm install
 ```
 
@@ -47,6 +47,8 @@ npm run dev
 
 The app will be available at:
 http://localhost:5173
+
+on the landing page click "Explore Now" button to see the features
 
 ## 📚 Storybook
 ```bash
