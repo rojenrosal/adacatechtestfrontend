@@ -31,8 +31,8 @@ Make sure you have [Node.js](https://nodejs.org/) and npm installed.
 
 ### **Installation**
 ```bash
-git clone https://github.com/your-username/user-directory-viewer.git
-cd user-directory-viewer
+git clone https://github.com/rojenrosal/adacatechtestfrontend.git
+cd userdirectoryviewer 
 npm install
 ```
 
